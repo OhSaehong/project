@@ -7,10 +7,8 @@
 	<!-- 1.DataSource 객체 bean 생성 -->
 <bean id="dataSource" class=
 "org.springframework.jdbc.datasource.DriverManagerDataSource">
-<property name="driverClassName" value=
-"oracle.jdbc.driver.OracleDriver" />
-<property name="url" value=
-"jdbc:oracle:thin:@127.0.0.1:1521:xe" />
+<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe" />
 <property name="username" value="pjt" />
 <property name="password" value="pjt" />
 </bean>
@@ -23,7 +21,7 @@ class="org.mybatis.spring.SqlSessionFactoryBean" >
 <property name="configLocation" 
 value="classpath:/project/multi/login/login-config.xml" />
 <property name="mapperLocations" 
-value="classpath:/project/multi/login/*-mapping.xml" />
+value="classpath:/project/multi/login/login-mapping.xml" />
 </bean>
 <!-- 3.mybatis : SqlSession 
 spring : SqlSessionTemplate 객체 bean 생성 -->
